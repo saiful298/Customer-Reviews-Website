@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Review = (props) => {
-    const { name, username, id } = props.review;
+    const { review, ratings, img, name, username, id } = props.review;
     const navigate = useNavigate()
     const showReviewDetail = () => {
         const path = `/review/${id}`;
@@ -11,10 +11,14 @@ const Review = (props) => {
 
     }
     return (
-        <div>
-            <h2>Name:{name}</h2>
-            <button onClick={showReviewDetail}>{username} id:{id}</button>
-
+        <div class="card">
+            <img src={img} alt="" width="250" height="200"></img>
+            <div class="container">
+                <h4><b>Name:{name}</b></h4>
+                <h5>Rating:{ratings}</h5><hr />
+                <p>Review: <small style={{ color: "red" }}>{review}</small></p>
+                <button onClick={showReviewDetail}>{username} id:{id}</button>
+            </div>
         </div>
     );
 };
