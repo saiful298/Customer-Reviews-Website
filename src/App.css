@@ -45,3 +45,8 @@ border-radius: 10px;
 .cardPart{
   display: flex;
 }
+.chart{
+  display: flex;
+  margin-left: 150px;
+  margin-top: 50px;
+}

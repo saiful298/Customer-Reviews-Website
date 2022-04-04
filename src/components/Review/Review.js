@@ -17,7 +17,7 @@ const Review = (props) => {
                 <h4><b>Name:{name}</b></h4>
                 <h5>Rating:{ratings}</h5><hr />
                 <p>Review: <small style={{ color: "red" }}>{review}</small></p>
-                <button onClick={showReviewDetail}>{username} id:{id}</button>
+                <button onClick={showReviewDetail}>{username} MemberShip Num :{id}</button>
             </div>
         </div>
     );
