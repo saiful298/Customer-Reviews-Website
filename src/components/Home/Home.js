@@ -1,4 +1,5 @@
 import React from 'react';
+import CustomLink from '../CustomLink/CustomLink';
 
 const Home = () => {
     return (
@@ -21,7 +22,24 @@ const Home = () => {
                 </div>
             </section>
             <div>
-                <hr /><h1 className='review'>Customer Reviews</h1><hr />
+                <hr /><h1 className='review'>Customer Reviews (3)</h1><hr />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <CustomLink to="/reviews"> <span className='seeAll'> See All Reviews </span></CustomLink>
+
+
             </div>
         </section>
 

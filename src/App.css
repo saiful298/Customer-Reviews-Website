@@ -23,6 +23,13 @@ padding-bottom: 5px;
 border-radius: 10px;
   
 }
+.seeAll{
+  background-color: crimson;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
 .review{
   font-size: 25px;
  color: rgb(18, 1, 47);
