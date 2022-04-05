@@ -51,6 +51,7 @@ border-radius: 10px;
 }
 .cardPart{
   display: flex;
+  
 }
 .chart{
   display: flex;

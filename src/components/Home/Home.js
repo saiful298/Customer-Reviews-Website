@@ -1,7 +1,10 @@
 import React from 'react';
+import useReview from '../../hook/useReviews';
 import CustomLink from '../CustomLink/CustomLink';
+import Review from '../Review/Review';
 
 const Home = () => {
+    const [reviews, setReviews] = useReview()
     return (
         <section>
             <section className='first-part'>
@@ -21,26 +24,22 @@ const Home = () => {
                     <a href="https://ibb.co/87zfwBg"><img src="https://i.ibb.co/FDsy1W4/kashtan.jpg" alt="kashtan" border="0" /></a>
                 </div>
             </section>
-            <div>
+            <section >
+
                 <hr /><h1 className='review'>Customer Reviews (3)</h1><hr />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
+                <div className='cardPart'>
+                    {reviews.slice(0, 3).map(review => <Review
+                        key={review.id}
+                        review={review}
+                    ></Review>)
+                    }
+                </div><br /><br />
                 <CustomLink to="/reviews"> <span className='seeAll'> See All Reviews </span></CustomLink>
 
 
-            </div>
+
+            </section>
+
         </section>
 
     );

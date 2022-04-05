@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import useReview from '../../hook/useReviews';
 import Review from '../Review/Review';
 
 const Reviews = () => {
-    const [reviews, setReviews] = useState([]);
-    useEffect(() => {
-        fetch('https://api.npoint.io/32e725509139751765fe')
-            .then(res => res.json())
-            .then(data => setReviews(data))
-    }, [])
+    const [reviews, setReviews] = useReview()
     return (
         <div>
             <h3>Our Reviews list</h3>
